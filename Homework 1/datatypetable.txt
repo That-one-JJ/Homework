@@ -1,0 +1,84 @@
+// data taken from helpcentre reference manual
+//http://helpcentreonline.com/article/primitiv_console_gcc.pdf
+//data also taken from GNU-C manual
+//http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Enumerations
+
+		               DATA TABLES
+
+			
+                            	CHARACTER
+
++---------------+-------------+--------------+---------------+-----------+
+|  data type    | size        | min value    | max value     | encoding  |
++===============+=============+==============+===============+===========+
+| signed char   | one byte    |    -128      |     128       | 8 bits    |
++---------------+-------------+--------------+---------------+-----------+
+| unsigned char | one byte    |      0       |     256       | 8 bits    |
++---------------+-------------+--------------+---------------+-----------+
+
+				INTEGERS
+
++---------------+-------------+--------------+---------------+-----------+
+|  data type    | size        | min value    | max value     | encoding  |
++===============+=============+==============+===============+===========+
+| signed short  | two bytes   |   -32,768    |  32,768       | 16 bits   |
++---------------+-------------+--------------+---------------+-----------+
+| unsigned short| two bytes   |      0       |   65,535      | 16 bits   |
++---------------+-------------+--------------+---------------+-----------+
+| signed normal | four bytes  |-2,147,483,648| 2,147,483,647 | 32 bits   |
++---------------+-------------+--------------+---------------+-----------+
+|unsigned normal| four bytes  |      0       | 4,294,967,295 | 32 bits   |
++---------------+-------------+--------------+---------------+-----------+
+| signed  long  | four bytes  |-2,147,483,648| 2,147,483,647 | 32 bits   |
++---------------+-------------+--------------+---------------+-----------+
+|unsigned long  | four bytes  |      0       | 4,294,967,295 | 32 bits   |
++---------------+-------------+--------------+---------------+-----------+
+//long long int has been left out of the table due to issues with fitting it
+// in said table.
+//Source: http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Enumerations
+
+			      BOOLEAN
+
++---------------+-------------+--------------+---------------+-----------+
+|  data type    | size        | min value    | max value     | encoding  |
++===============+=============+==============+===============+===========+
+| boolean value | one byte    |    true      |    false      |  8 bits   |
++---------------+-------------+--------------+---------------+-----------+
+//Source:http://helpcentreonline.com/article/primitiv_console_gcc.pdf
+
+			          FLOAT
+
++---------------+-------------+--------------+---------------+-----------+
+|  data type    | size        | min value    | max value     | encoding  |
++===============+=============+==============+===============+===========+
+| float number  | four bytes  |1.17549*10^-38| 3.40282*10^38 | 32 bits   |
++---------------+-------------+--------------+---------------+-----------+
+//Source:http://helpcentreonline.com/article/primitiv_console_gcc.pdf
+
+                               DOUBLE FLOAT
+
++---------------+-------------+---------------+---------------+-----------+
+|  data type    | size        | min value     | max value     | encoding  |
++===============+=============+===============+===============+===========+
+| float number  | eight bytes |2.22507*10^-308| 1.79769*10^308| 64 bits   |
++---------------+-------------+---------------+---------------+-----------+
+//Source: http://helpcentreonline.com/article/primitiv_console_gcc.pdf
+
+                            LONG DOUBLE FLOAT
+
++---------------+-------------+----------------+---------------+-----------+
+|  data type    | size        | min value      | max value     | encoding  |
++===============+=============+================+===============+===========+
+| float number  |twelve bytes |3.36210*10^-4932|1.18973*10^4932| 80  bits  |
++---------------+-------------+----------------+---------------+-----------+
+Source:// http://helpcentreonline.com/article/primitiv_console_gcc.pdf
+//80 bit extension is standard used in x86 architecture
+
+                             WIDE CHARACTER
+
++---------------+-------------+----------------+---------------+-----------+
+|  data type    | size        | min value      | max value     | encoding  |
++===============+=============+================+===============+===========+
+| float number  |  two  bytes |1 wide character|               | 16  bits  |
++---------------+-------------+----------------+---------------+-----------+
+//Source: http://helpcentreonline.com/article/primitiv_console_gcc.pdf
